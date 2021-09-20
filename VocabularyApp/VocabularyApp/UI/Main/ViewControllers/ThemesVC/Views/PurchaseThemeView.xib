@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PurchaseThemeView" id="iN0-l3-epB" customClass="PurchaseThemeView" customModule="VocabularyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="305"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-CF-VT5">
+                    <rect key="frame" x="0.0" y="0.0" width="330" height="305"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKw-FD-fMf">
+                            <rect key="frame" x="10" y="255" width="310" height="40"/>
+                            <color key="backgroundColor" name="pinkCoral"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lbb-yI-GXf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="Buy Theme">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapBuyButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="uwH-Ws-T8L"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Get New Theme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmK-8V-m4y">
+                            <rect key="frame" x="10" y="193" width="310" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="(0.99 $)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R20-qm-EWD">
+                            <rect key="frame" x="10" y="219" width="310" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-wC-aB7">
+                            <rect key="frame" x="50" y="45" width="230" height="138"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvm-W8-wtU">
+                            <rect key="frame" x="17" y="17" width="21" height="22"/>
+                            <color key="tintColor" name="darkerGray"/>
+                            <state key="normal">
+                                <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapClosebutton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FaN-TJ-6f2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="yKw-FD-fMf" secondAttribute="bottom" constant="10" id="0Hl-A2-0Ne"/>
+                        <constraint firstItem="R20-qm-EWD" firstAttribute="leading" secondItem="Fwh-CF-VT5" secondAttribute="leading" constant="10" id="0L0-zY-U3S"/>
+                        <constraint firstItem="RmK-8V-m4y" firstAttribute="leading" secondItem="Fwh-CF-VT5" secondAttribute="leading" constant="10" id="6WW-LH-Mef"/>
+                        <constraint firstItem="gp9-wC-aB7" firstAttribute="leading" secondItem="Fwh-CF-VT5" secondAttribute="leading" constant="50" id="6p0-aE-i0h"/>
+                        <constraint firstAttribute="trailing" secondItem="yKw-FD-fMf" secondAttribute="trailing" constant="10" id="Dos-jj-oGP"/>
+                        <constraint firstItem="gp9-wC-aB7" firstAttribute="top" secondItem="Fwh-CF-VT5" secondAttribute="top" constant="45" id="Eik-kG-s4v"/>
+                        <constraint firstAttribute="trailing" secondItem="gp9-wC-aB7" secondAttribute="trailing" constant="50" id="Ha7-Cu-wrn"/>
+                        <constraint firstItem="yKw-FD-fMf" firstAttribute="top" secondItem="R20-qm-EWD" secondAttribute="bottom" constant="15" id="MfB-v4-jOI"/>
+                        <constraint firstItem="RmK-8V-m4y" firstAttribute="top" secondItem="gp9-wC-aB7" secondAttribute="bottom" constant="10" id="UTg-P6-uJv"/>
+                        <constraint firstItem="rvm-W8-wtU" firstAttribute="leading" secondItem="Fwh-CF-VT5" secondAttribute="leading" constant="17" id="ZPd-nd-45t"/>
+                        <constraint firstItem="rvm-W8-wtU" firstAttribute="top" secondItem="Fwh-CF-VT5" secondAttribute="top" constant="17" id="eEo-lU-dw0"/>
+                        <constraint firstItem="yKw-FD-fMf" firstAttribute="leading" secondItem="Fwh-CF-VT5" secondAttribute="leading" constant="10" id="frP-SI-lVw"/>
+                        <constraint firstAttribute="trailing" secondItem="R20-qm-EWD" secondAttribute="trailing" constant="10" id="jmO-yj-bVu"/>
+                        <constraint firstAttribute="trailing" secondItem="RmK-8V-m4y" secondAttribute="trailing" constant="10" id="qCo-YJ-mLn"/>
+                        <constraint firstItem="R20-qm-EWD" firstAttribute="top" secondItem="RmK-8V-m4y" secondAttribute="bottom" constant="5" id="snH-sm-SIe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Fwh-CF-VT5" secondAttribute="bottom" id="9l6-Zn-97N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fwh-CF-VT5" secondAttribute="trailing" id="F7c-2h-aGb"/>
+                <constraint firstItem="Fwh-CF-VT5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MzA-RW-vN6"/>
+                <constraint firstItem="Fwh-CF-VT5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tBn-QJ-qOU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buyButton" destination="yKw-FD-fMf" id="FrT-IW-iUs"/>
+                <outlet property="containerView" destination="Fwh-CF-VT5" id="EZo-C0-faY"/>
+                <outlet property="imageView" destination="gp9-wC-aB7" id="1rd-OK-NRa"/>
+                <outlet property="priceLabel" destination="R20-qm-EWD" id="3Ub-Ho-3Hf"/>
+                <outlet property="titleLabel" destination="RmK-8V-m4y" id="7Z4-4s-3md"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="199.88839285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="darkerGray">
+            <color red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pinkCoral">
+            <color red="0.97254901960784312" green="0.51372549019607838" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThemeCollectionViewCell" id="gTV-IL-0wX" customClass="ThemeCollectionViewCell" customModule="VocabularyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dms-M6-4mQ">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="175"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG6-qY-pMe">
+                        <rect key="frame" x="94" y="143" width="40" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KFT-nf-vVf">
+                                <rect key="frame" x="0.0" y="3" width="40" height="14.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <imageReference key="image" image="checkmark" catalog="system" renderingMode="template"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KFT-nf-vVf" secondAttribute="trailing" id="8A5-N1-fHU"/>
+                            <constraint firstItem="KFT-nf-vVf" firstAttribute="leading" secondItem="hG6-qY-pMe" secondAttribute="leading" id="kjQ-Vy-YR5"/>
+                            <constraint firstAttribute="bottom" secondItem="KFT-nf-vVf" secondAttribute="bottom" constant="3" id="laj-gD-idZ"/>
+                            <constraint firstAttribute="width" constant="40" id="nFh-Z1-lbY"/>
+                            <constraint firstItem="KFT-nf-vVf" firstAttribute="top" secondItem="hG6-qY-pMe" secondAttribute="top" constant="1" id="pWg-0T-9Mi"/>
+                            <constraint firstAttribute="height" constant="22" id="r0d-Yf-QSD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkO-8n-0It">
+                        <rect key="frame" x="51.5" y="66.5" width="41" height="42"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dms-M6-4mQ" secondAttribute="trailing" id="8zo-X1-GOc"/>
+                <constraint firstAttribute="bottom" secondItem="hG6-qY-pMe" secondAttribute="bottom" constant="10" id="ABX-Uk-Aqu"/>
+                <constraint firstItem="dms-M6-4mQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cqo-4Q-vGQ"/>
+                <constraint firstAttribute="bottom" secondItem="dms-M6-4mQ" secondAttribute="bottom" id="Gea-Q4-FCY"/>
+                <constraint firstItem="nkO-8n-0It" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="MM1-s3-rq6"/>
+                <constraint firstAttribute="trailing" secondItem="hG6-qY-pMe" secondAttribute="trailing" constant="10" id="VgQ-KL-9Fs"/>
+                <constraint firstItem="nkO-8n-0It" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Yaz-4F-icY"/>
+                <constraint firstItem="dms-M6-4mQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ldr-Td-CNL"/>
+            </constraints>
+            <size key="customSize" width="144" height="175"/>
+            <connections>
+                <outlet property="fontExampleLabel" destination="nkO-8n-0It" id="WqA-Y7-uUB"/>
+                <outlet property="isChosenThemeView" destination="hG6-qY-pMe" id="pwW-8u-E9G"/>
+                <outlet property="themeImageView" destination="dms-M6-4mQ" id="dpw-OF-1dM"/>
+            </connections>
+            <point key="canvasLocation" x="-130.43478260869566" y="158.37053571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

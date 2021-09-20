@@ -1,0 +1,36 @@
+platform :ios, '10.0'
+
+target 'VocabularyApp' do
+  use_frameworks!
+  
+  # Network
+  pod 'Alamofire', '~> 5.2'
+  pod 'AlamofireImage', '~> 4.1'
+  pod "PromiseKit", "~> 6.8"
+  
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  
+  # Sign In Options
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
+  
+  # Storage
+  pod 'KeychainAccess', '~> 4.2.2'
+  
+  # UI
+  pod 'NVActivityIndicatorView'
+  
+  # Other
+  pod 'SwiftLint'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Navajo-Swift'
+  pod 'SwifterSwift'
+  
+  target 'VocabularyAppPushNotificationService' do
+    pod "PromiseKit", "~> 6.8"
+    end
+
+end
+

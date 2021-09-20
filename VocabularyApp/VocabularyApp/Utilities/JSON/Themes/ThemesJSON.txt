@@ -1,0 +1,114 @@
+{
+    "themes": [
+        {
+            "title": "blue",
+            "font": "Ubuntu",
+            "bg_image": null,
+            "bg_color": "#468499",
+            "bg_url": null
+        },
+        {
+            "title": "pink",
+            "font": "AdventPro",
+            "bg_image": null,
+            "bg_color": "#c39797",
+            "bg_url": null
+        },
+        {
+            "title": "green",
+            "font": "HelveticaNeue",
+            "bg_image": null,
+            "bg_color": "#065535",
+            "bg_url": null
+        },
+        {
+            "title": "astrology",
+            "font": "AvenirNext",
+            "bg_image": "astrology",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "beach",
+            "font": "Futura",
+            "bg_image": "darkbeach",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "library",
+            "font": "AvenirNext",
+            "bg_image": "library",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "openbook",
+            "font": "Rubik",
+            "bg_image": "openbook",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "fireworks",
+            "font": "AvenirNext",
+            "bg_image": "fireworks",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "daisies",
+            "font": "Verdana",
+            "bg_image": "daisies",
+            "bg_color": null,
+            "bg_url": null
+        },
+        {
+            "title": "waves",
+            "font": "AvenirNext",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1547083723-7c73eaf54cc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "title": "berlin",
+            "font": "AdventPro",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1547147473-0b748ef102d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "title": "mountain",
+            "font": "Rubik",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "title": "forest",
+            "font": "Ubuntu",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1548413935-a7d015ff5865?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "title": "nightcity",
+            "font": "Futura",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1550030272-2695f03d3088?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "title": "sand",
+            "font": "Avenir",
+            "bg_image": null,
+            "bg_color": null,
+            "bg_url": "https://images.unsplash.com/photo-1550061064-a585ba637b82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        }
+    ]
+}
+
+
+
+
+

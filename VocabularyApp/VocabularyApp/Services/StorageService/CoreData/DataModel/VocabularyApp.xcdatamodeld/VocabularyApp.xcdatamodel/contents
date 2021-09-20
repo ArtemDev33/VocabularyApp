@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDefinition" representedClassName=".CoreDefinition" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="example" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CoreMeaning" representedClassName=".CoreMeaning" syncable="YES">
+        <attribute name="partOfSpeech" optional="YES" attributeType="String"/>
+        <relationship name="definitions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CoreDefinition"/>
+    </entity>
+    <entity name="CoreWord" representedClassName=".CoreWord" syncable="YES">
+        <attribute name="isFavourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="phonetics" optional="YES" attributeType="String"/>
+        <attribute name="word" optional="YES" attributeType="String"/>
+        <relationship name="meanings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CoreMeaning"/>
+    </entity>
+    <elements>
+        <element name="CoreDefinition" positionX="-378" positionY="-72" width="128" height="73"/>
+        <element name="CoreMeaning" positionX="-341.34033203125" positionY="-269.7453002929688" width="133.1468505859375" height="73"/>
+        <element name="CoreWord" positionX="-590.88525390625" positionY="-277.776611328125" width="128" height="89"/>
+    </elements>
+</model>

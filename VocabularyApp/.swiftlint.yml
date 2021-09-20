@@ -1,0 +1,63 @@
+excluded:
+    - Vendor
+    - Pods
+disabled_rules:
+    - dynamic_inline
+    - explicit_top_level_acl
+    - notification_center_detachment
+    - type_body_length
+    - void_return
+    - protocol_property_accessors_order
+    - trailing_whitespace
+    - vertical_parameter_alignment
+    - vertical_parameter_alignment_on_call
+    - statement_position
+    - nesting
+    - identifier_name
+    - force_cast
+opt_in_rules:
+    - closure_end_indentation
+    - closure_spacing
+    - empty_count
+    - explicit_init
+#- explicit_type_interface
+    - first_where
+    - number_separator
+    - operator_usage_whitespace
+    - private_outlet
+    - redundant_nil_coalescing
+    - vertical_parameter_alignment_on_call
+    - implicit_return
+    - multiline_parameters
+    - extension_access_modifier
+function_parameter_count:
+    warning: 8
+    error: 200
+
+type_name:
+    min_length:
+        w:0
+        e:0
+
+generic_type_name:
+    min_length:
+        w:0
+        e:0
+
+identifier_name:
+    min_length:
+        w:2
+        e:0
+
+large_tuple:
+    warning: 5
+    error: 200
+
+line_length:
+    warning: 160
+    error: 2000
+
+custom_rules:
+    no_none:
+        name: "Do not use .none in enums"
+        regex: "case(.*,)?.none"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>com.nixsolutions.VocabularyAppPush.astrologyTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.beachTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.berlinTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.daisiesTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.fireworksTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.forestTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.libraryTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.mountainTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.nightcityTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.openbookTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.wavesTheme</string>
+	<string>com.nixsolutions.VocabularyAppPush.sandTheme</string>
+</array>
+</plist>
